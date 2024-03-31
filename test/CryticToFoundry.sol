@@ -12,6 +12,6 @@ contract CryticToFoundry is Test, TargetFunctions, FoundryAsserts {
     }
 
     function testDemo() public {
-        assertEq(weth.balanceOf(address(this)), 0);
+        assertEq(address(iWETH9).balance, 0);
     }
 }

@@ -76,7 +76,7 @@
       "target": ".",
       "solcVersion": "",
       "exportDirectory": "",
-      "args": ["--foundry-compile-all"]
+      "args": []
     }
   },
   "logging": {

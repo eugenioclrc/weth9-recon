@@ -8,10 +8,10 @@ import {DeployWeth} from "src/DeployWeth.sol";
 
 abstract contract Setup is BaseSetup {
 
-    IWETH9 public weth;
+    IWETH9 public iWETH9;
 
     function setup() internal virtual override {
         DeployWeth d = new DeployWeth();
-        weth = IWETH9(d.weth());
+        iWETH9 = IWETH9(d.weth());
     }
 }
