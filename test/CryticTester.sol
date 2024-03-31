@@ -4,11 +4,12 @@ pragma solidity ^0.8.0;
 
 import {TargetFunctions} from "./TargetFunctions.sol";
 import {CryticAsserts} from "@chimera/CryticAsserts.sol";
-
+import {vm} from "@chimera/Hevm.sol";
 // echidna . --contract CryticTester --config echidna.yaml
 // medusa fuzz
 contract CryticTester is TargetFunctions, CryticAsserts {
     constructor() payable {
-        setup();
+        // fuzz state require handler to have balance
+        require(address(this).balance > 0);
     }
 }
