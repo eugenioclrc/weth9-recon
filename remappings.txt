@@ -1,3 +1,2 @@
 forge-std/=lib/forge-std/src/
-forge-std/=lib/forge-std/src/
-@chimera/=lib/chimera/src/
+@chimera/=glib/chimera/src/
