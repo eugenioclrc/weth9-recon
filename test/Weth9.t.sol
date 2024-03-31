@@ -5,7 +5,7 @@ import {Test, console} from "forge-std/Test.sol";
 import {IWETH9} from "../src/IWETH9.sol";
 import {DeployWeth} from "../src/DeployWeth.sol";
 
-contract CounterTest is Test {
+contract WethTest is Test {
     IWETH9 public weth;
 
     function setUp() public {
